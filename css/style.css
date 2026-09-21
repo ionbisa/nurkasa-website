@@ -635,6 +635,23 @@ p {
   padding: 26px;
 }
 
+.service-icon-large {
+  width: 74px;
+  height: 74px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(217, 164, 65, 0.14),
+    rgba(217, 164, 65, 0.3)
+  );
+  color: var(--gold);
+  font-size: 1.75rem;
+}
+
 .business-logo-frame {
   min-height: 210px;
   margin-bottom: 20px;
@@ -778,6 +795,14 @@ p {
 
 .business-summary {
   margin-bottom: 18px;
+}
+
+.service-positioning {
+  margin-bottom: 18px;
+  color: var(--navy);
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
 .business-points {
