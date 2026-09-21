@@ -25,6 +25,18 @@
   const submitButton = contactForm?.querySelector('button[type="submit"]');
   const defaultSubmitLabel = submitButton?.textContent.trim() || "Kirim Pesan";
   const whatsappNumber = "628533388295";
+  const galleryFilters = Array.from(
+    document.querySelectorAll("[data-gallery-filter]"),
+  );
+  const galleryItems = Array.from(
+    document.querySelectorAll("[data-gallery-category]"),
+  );
+  const workGallery = document.getElementById("workGallery");
+  const galleryLightbox = document.getElementById("galleryLightbox");
+  const galleryLightboxImage = document.getElementById("galleryLightboxImage");
+  const galleryCloseButton = galleryLightbox?.querySelector(
+    ".gallery-lightbox-close",
+  );
 
   const getNavIconClass = (href = "") => {
     if (href.includes("#home")) {
@@ -167,6 +179,49 @@
       window.bootstrap.Collapse.getInstance(navbarCollapse) ||
       new window.bootstrap.Collapse(navbarCollapse, { toggle: false });
     collapse.hide();
+  };
+
+  const setGalleryFilter = (filter) => {
+    workGallery?.classList.toggle("is-filtered", filter !== "all");
+
+    galleryFilters.forEach((button) => {
+      const isActive = button.dataset.galleryFilter === filter;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+
+    galleryItems.forEach((item) => {
+      const categories = item.dataset.galleryCategory?.split(" ") || [];
+      item.dataset.galleryHidden = String(
+        filter !== "all" && !categories.includes(filter),
+      );
+    });
+  };
+
+  const closeGalleryLightbox = () => {
+    if (!galleryLightbox) {
+      return;
+    }
+
+    galleryLightbox.classList.remove("is-open");
+    galleryLightbox.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("gallery-lightbox-open");
+  };
+
+  const openGalleryLightbox = (button) => {
+    const src = button.dataset.gallerySrc;
+    const alt = button.dataset.galleryAlt || "Dokumentasi pekerjaan CV Nurkasa Jaya Pertiwi";
+
+    if (!galleryLightbox || !galleryLightboxImage || !src) {
+      return;
+    }
+
+    galleryLightboxImage.src = src;
+    galleryLightboxImage.alt = alt;
+    galleryLightbox.classList.add("is-open");
+    galleryLightbox.setAttribute("aria-hidden", "false");
+    document.body.classList.add("gallery-lightbox-open");
+    galleryCloseButton?.focus();
   };
 
   const isMobileViewport = () => window.innerWidth < mobileBreakpoint;
@@ -501,6 +556,7 @@
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       closeMobileMenu();
+      closeGalleryLightbox();
     }
   });
 
@@ -516,6 +572,27 @@
       });
     });
   }
+
+  galleryFilters.forEach((button) => {
+    button.setAttribute(
+      "aria-pressed",
+      String(button.classList.contains("is-active")),
+    );
+    button.addEventListener("click", () => {
+      setGalleryFilter(button.dataset.galleryFilter || "all");
+    });
+  });
+
+  document.querySelectorAll("[data-gallery-open]").forEach((button) => {
+    button.addEventListener("click", () => openGalleryLightbox(button));
+  });
+
+  galleryCloseButton?.addEventListener("click", closeGalleryLightbox);
+  galleryLightbox?.addEventListener("click", (event) => {
+    if (event.target === galleryLightbox) {
+      closeGalleryLightbox();
+    }
+  });
 
   syncMobileMenuState();
 })();

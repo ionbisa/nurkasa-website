@@ -128,7 +128,7 @@
       type="image/x-icon"
     />
 
-    <link rel="stylesheet" href="css/style.css?v=20260424-3" />
+    <link rel="stylesheet" href="css/style.css?v=20260922-1" />
   </head>
   <body>
     <div class="topbar py-2">
@@ -778,10 +778,10 @@
       <div class="container">
         <div class="section-heading text-center">
           <span class="section-kicker">Mitra Kami</span>
-          <h2>Dipercaya untuk Mendukung Operasional</h2>
+          <h2>Dipercaya Menjaga Fasilitas Tetap Andal</h2>
           <p>
-            Kepercayaan mitra menjadi bagian penting dari komitmen kami dalam
-            menghadirkan layanan yang profesional, rapi, dan konsisten.
+            Kami mendukung kebutuhan fasilitas mitra melalui layanan mekanikal
+            AC serta pekerjaan konstruksi dan sipil yang profesional.
           </p>
         </div>
 
@@ -794,12 +794,14 @@
             />
           </div>
           <div class="partner-copy">
-            <span class="partner-label">Partner Cleaning Service</span>
+            <span class="partner-label">Partner Layanan AC &amp; Sipil</span>
             <h3>RSD Gunung Jati Kota Cirebon</h3>
             <p>
               CV Nurkasa Jaya Pertiwi dipercaya untuk mendukung kebutuhan
-              cleaning service RSUD Gunung Jati Kota Cirebon dengan layanan yang
-              mengutamakan kebersihan, ketelitian, dan standar kerja
+              cleaning dan preventive maintenance AC, serta pekerjaan
+              konstruksi dan sipil berupa perbaikan, perawatan, dan penyesuaian
+              fasilitas. Setiap layanan dijalankan dengan fokus pada
+              kebersihan, ketelitian, keselamatan, dan standar kerja
               profesional.
             </p>
             <div class="partner-meta">
@@ -940,65 +942,293 @@
       </div>
     </section>
 
-    <section class="section-pad" id="gallery">
+    <section class="section-pad project-gallery" id="gallery">
       <div class="container">
-        <div class="section-heading text-center">
-          <span class="section-kicker">Portfolio Capability</span>
-          <h2>Solusi untuk Berbagai Kebutuhan Proyek</h2>
-          <p>
-            Cakupan layanan NJP dapat disesuaikan untuk kebutuhan perkantoran,
-            instansi pemerintahan, rumah sakit, pabrik, hotel, dan proyek
-            konstruksi.
+        <div class="gallery-intro">
+          <div class="section-heading mb-0">
+            <span class="section-kicker">Jejak Kerja NJP</span>
+            <h2>Di balik pekerjaan yang selesai dengan rapi.</h2>
+          </div>
+          <p class="gallery-intro-copy">
+            Ruang dokumentasi untuk memperlihatkan pendekatan kerja NJP, dari
+            persiapan dan koordinasi teknis hingga penyelesaian pekerjaan.
           </p>
         </div>
 
-        <div class="row g-4 gallery-grid">
-          <div class="col-md-4">
-            <div class="image-frame tall gallery-card">
-              <img
-                src="img/produk/sipil/sipil.jpg"
-                alt="General Contractor untuk gedung perkantoran"
-                loading="lazy"
-              />
-              <div class="gallery-caption">
-                <span>01 · General Contractor</span>
-                <h4>
-                  Dukungan pekerjaan teknis untuk gedung perkantoran perusahaan
-                </h4>
-              </div>
+        <div class="gallery-toolbar" aria-label="Filter dokumentasi">
+          <button
+            class="gallery-filter is-active"
+            type="button"
+            data-gallery-filter="all"
+          >
+            <i class="bi bi-grid-3x3-gap" aria-hidden="true"></i
+            ><span>Semua</span>
+          </button>
+          <button
+            class="gallery-filter"
+            type="button"
+            data-gallery-filter="civil"
+          >
+            <i class="bi bi-buildings" aria-hidden="true"></i
+            ><span>Konstruksi</span>
+          </button>
+          <button
+            class="gallery-filter"
+            type="button"
+            data-gallery-filter="mechanical"
+          >
+            <i class="bi bi-fan" aria-hidden="true"></i><span>Mekanikal</span>
+          </button>
+          <button
+            class="gallery-filter"
+            type="button"
+            data-gallery-filter="process"
+          >
+            <i class="bi bi-clipboard2-check" aria-hidden="true"></i
+            ><span>Proses Kerja</span>
+          </button>
+        </div>
+
+        <div class="work-gallery-grid" id="workGallery">
+          <article
+            class="work-shot work-shot-featured"
+            data-gallery-category="mechanical process"
+          >
+            <img
+              src="img/produk/ac/satu.png"
+              alt="Teknisi CV Nurkasa Jaya Pertiwi melakukan perawatan unit AC"
+              loading="lazy"
+            />
+            <button
+              class="gallery-expand"
+              type="button"
+              data-gallery-open
+              data-gallery-src="img/produk/ac/satu.png"
+              data-gallery-alt="Teknisi CV Nurkasa Jaya Pertiwi melakukan perawatan unit AC"
+              aria-label="Perbesar foto perawatan AC"
+            >
+              <i class="bi bi-arrows-angle-expand" aria-hidden="true"></i>
+            </button>
+            <div class="work-shot-content">
+              <span class="work-shot-index">01 / Mechanical</span>
+              <h3>Perawatan sistem yang menjaga kenyamanan tetap bekerja.</h3>
+              <p>Pengecekan detail untuk kinerja AC yang optimal dan andal.</p>
             </div>
+          </article>
+
+          <article
+            class="work-shot work-shot-portrait"
+            data-gallery-category="civil process"
+          >
+            <img
+              src="img/produk/sipil/sipil_5.jpeg"
+              alt="Tim CV Nurkasa Jaya Pertiwi memasang elemen interior kayu"
+              loading="lazy"
+            />
+            <button
+              class="gallery-expand"
+              type="button"
+              data-gallery-open
+              data-gallery-src="img/produk/sipil/sipil_5.jpeg"
+              data-gallery-alt="Tim CV Nurkasa Jaya Pertiwi memasang elemen interior kayu"
+              aria-label="Perbesar foto pemasangan interior"
+            >
+              <i class="bi bi-arrows-angle-expand" aria-hidden="true"></i>
+            </button>
+            <div class="work-shot-content">
+              <span class="work-shot-index">02 / Civil</span>
+              <h3>
+                Pemasangan interior dengan perhatian pada setiap sambungan.
+              </h3>
+            </div>
+          </article>
+
+          <article
+            class="work-shot work-shot-wide"
+            data-gallery-category="civil process"
+          >
+            <img
+              src="img/produk/sipil/sipil_6.jpeg"
+              alt="Tim CV Nurkasa Jaya Pertiwi mengerjakan instalasi wastafel"
+              loading="lazy"
+            />
+            <button
+              class="gallery-expand"
+              type="button"
+              data-gallery-open
+              data-gallery-src="img/produk/sipil/sipil_6.jpeg"
+              data-gallery-alt="Tim CV Nurkasa Jaya Pertiwi mengerjakan instalasi wastafel"
+              aria-label="Perbesar foto instalasi wastafel"
+            >
+              <i class="bi bi-arrows-angle-expand" aria-hidden="true"></i>
+            </button>
+            <div class="work-shot-content">
+              <span class="work-shot-index">03 / Interior</span>
+              <h3>
+                Instalasi fasilitas yang presisi dari rangka hingga finishing.
+              </h3>
+            </div>
+          </article>
+
+          <article
+            class="work-shot work-shot-detail"
+            data-gallery-category="civil process"
+          >
+            <img
+              src="img/produk/sipil/sipil_8.jpeg"
+              alt="Pekerja CV Nurkasa Jaya Pertiwi melakukan pekerjaan plafon"
+              loading="lazy"
+            />
+            <button
+              class="gallery-expand"
+              type="button"
+              data-gallery-open
+              data-gallery-src="img/produk/sipil/sipil_8.jpeg"
+              data-gallery-alt="Pekerja CV Nurkasa Jaya Pertiwi melakukan pekerjaan plafon"
+              aria-label="Perbesar foto pekerjaan plafon"
+            >
+              <i class="bi bi-arrows-angle-expand" aria-hidden="true"></i>
+            </button>
+            <div class="work-shot-content">
+              <span class="work-shot-index">04 / Finishing</span>
+              <h3>Ruang yang dibentuk sampai ke detail di atas kepala.</h3>
+            </div>
+          </article>
+        </div>
+
+        <div
+          class="gallery-archive-grid"
+          aria-label="Dokumentasi pekerjaan lainnya"
+        >
+          <article
+            class="gallery-archive-card"
+            data-gallery-category="civil process"
+          >
+            <img
+              src="img/produk/sipil/sipil_7.jpeg"
+              alt="Tim memasang cermin pada area wastafel"
+              loading="lazy"
+            />
+            <button
+              class="gallery-expand"
+              type="button"
+              data-gallery-open
+              data-gallery-src="img/produk/sipil/sipil_7.jpeg"
+              data-gallery-alt="Tim memasang cermin pada area wastafel"
+              aria-label="Perbesar foto pemasangan cermin"
+            >
+              <i class="bi bi-arrows-angle-expand" aria-hidden="true"></i>
+            </button>
+            <span>05 / Detail interior</span>
+          </article>
+          <article
+            class="gallery-archive-card"
+            data-gallery-category="civil process"
+          >
+            <img
+              src="img/produk/sipil/qaaaaaa.jpeg"
+              alt="Pekerja melakukan perbaikan dinding ruangan"
+              loading="lazy"
+            />
+            <button
+              class="gallery-expand"
+              type="button"
+              data-gallery-open
+              data-gallery-src="img/produk/sipil/qaaaaaa.jpeg"
+              data-gallery-alt="Pekerja melakukan perbaikan dinding ruangan"
+              aria-label="Perbesar foto perbaikan dinding"
+            >
+              <i class="bi bi-arrows-angle-expand" aria-hidden="true"></i>
+            </button>
+            <span>06 / Perbaikan dinding</span>
+          </article>
+          <article
+            class="gallery-archive-card"
+            data-gallery-category="civil process"
+          >
+            <img
+              src="img/produk/sipil/sipil_1.jpg"
+              alt="Pekerja konstruksi melaksanakan pekerjaan pada perancah"
+              loading="lazy"
+            />
+            <button
+              class="gallery-expand"
+              type="button"
+              data-gallery-open
+              data-gallery-src="img/produk/sipil/sipil_1.jpg"
+              data-gallery-alt="Pekerja konstruksi melaksanakan pekerjaan pada perancah"
+              aria-label="Perbesar foto pekerjaan konstruksi"
+            >
+              <i class="bi bi-arrows-angle-expand" aria-hidden="true"></i>
+            </button>
+            <span>07 / Struktur lapangan</span>
+          </article>
+          <article
+            class="gallery-archive-card"
+            data-gallery-category="mechanical process"
+          >
+            <img
+              src="img/produk/ac/dua.png"
+              alt="Teknisi melakukan pemeriksaan unit AC"
+              loading="lazy"
+            />
+            <button
+              class="gallery-expand"
+              type="button"
+              data-gallery-open
+              data-gallery-src="img/produk/ac/dua.png"
+              data-gallery-alt="Teknisi melakukan pemeriksaan unit AC"
+              aria-label="Perbesar foto pemeriksaan unit AC"
+            >
+              <i class="bi bi-arrows-angle-expand" aria-hidden="true"></i>
+            </button>
+            <span>08 / AC service</span>
+          </article>
+        </div>
+
+        <div
+          class="gallery-process"
+          aria-label="Tahapan kerja CV Nurkasa Jaya Pertiwi"
+        >
+          <div>
+            <span>01</span><strong>Survey</strong
+            ><small>Membaca kebutuhan di lokasi.</small>
           </div>
-          <div class="col-md-4">
-            <div class="image-frame gallery-card portfolio-logo-card">
-              <img
-                src="img/partner/rsud_guja.png"
-                alt="RSUD Gunung Jati Kota Cirebon sebagai mitra layanan CV NJP"
-                loading="lazy"
-              />
-              <div class="gallery-caption">
-                <span>02 · Engineering &amp; Procurement</span>
-                <h4>
-                  Perencanaan, analisa, serta pengadaan untuk kebutuhan proyek
-                </h4>
-              </div>
-            </div>
+          <div>
+            <span>02</span><strong>Rencana</strong
+            ><small>Menyusun langkah yang presisi.</small>
           </div>
-          <div class="col-md-4">
-            <div class="image-frame tall gallery-card">
-              <img
-                src="img/produk/ac/satu.png"
-                alt="Mechanical dan Civil Construction untuk fasilitas usaha"
-                loading="lazy"
-              />
-              <div class="gallery-caption">
-                <span>03 · Mechanical &amp; Civil</span>
-                <h4>Pekerjaan mechanical, AC service, dan konstruksi sipil</h4>
-              </div>
-            </div>
+          <div>
+            <span>03</span><strong>Eksekusi</strong
+            ><small>Mengerjakan dengan standar mutu.</small>
+          </div>
+          <div>
+            <span>04</span><strong>Serah Terima</strong
+            ><small>Memastikan hasil siap digunakan.</small>
           </div>
         </div>
       </div>
     </section>
+
+    <div
+      class="gallery-lightbox"
+      id="galleryLightbox"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Tampilan foto dokumentasi"
+    >
+      <button
+        class="gallery-lightbox-close"
+        type="button"
+        aria-label="Tutup foto"
+      >
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+      <figure class="gallery-lightbox-figure">
+        <img id="galleryLightboxImage" src="" alt="" />
+      </figure>
+    </div>
 
     <section class="section-pad section-soft" id="location">
       <div class="container">
@@ -1329,6 +1559,6 @@
     </button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js?v=20260424-3"></script>
+    <script src="js/main.js?v=20260922-1"></script>
   </body>
 </html>
