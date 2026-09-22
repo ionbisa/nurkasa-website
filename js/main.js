@@ -24,7 +24,7 @@
   const formAlert = document.getElementById("formAlert");
   const submitButton = contactForm?.querySelector('button[type="submit"]');
   const defaultSubmitLabel = submitButton?.textContent.trim() || "Kirim Pesan";
-  const whatsappNumber = "628533388295";
+  const whatsappNumber = "6285333888295";
   const galleryFilters = Array.from(
     document.querySelectorAll("[data-gallery-filter]"),
   );
