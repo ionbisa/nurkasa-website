@@ -1,6 +1,2 @@
 User-agent: *
 Allow: /
-Disallow: /portal-berita.html
-Disallow: /news/
-Disallow: /career/
-Disallow: /unit/
